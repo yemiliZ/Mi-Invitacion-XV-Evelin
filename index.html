@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Invitación digital para los XV años de Evelin Torres Larios.">
+    <meta name="keywords" content="invitaciones digitales, invitaciones web, invitaciones XV años, Evelin Torres Larios, diamante">
+    <meta name="author" content="Digital RSVP">
+    <base href="/">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="./sobreLoadinig.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&amp;family=Alfa+Slab+One&amp;family=Alegreya&amp;family=Outfit:wght@100..900&amp;family=Prata&amp;family=Roboto:wght@400;700&amp;family=Tangerine:wght@400;700&amp;display=swap" rel="stylesheet">
+    
+    <title>Evelin XV Años - 12 Diciembre 2025</title>
+    
+    <style> 
+        /* Variables y base para la invitación */
+        :root {
+            --color-principal: #a55a82; /* Tono de rosa/morado para el tema */
+            --color-acento: #7FE6FF; /* Tono de diamante/brillo */
+        }
+        body {
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .invitation-container {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+
+        /* Estilos para el efecto 3D y diamante */
+        .diamond-border {
+            position: relative;
+            border-radius: 20px;
+            overflow: visible !important;
+        }
+        .diamond-border::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            background: linear-gradient(45deg, var(--color-acento)40, transparent 60%);
+            border-radius: 24px;
+            animation: borderGlow 2s linear infinite;
+            z-index: -1;
+            filter: blur(3px);
+            pointer-events: none;
+        }
+        .diamond-icon {
+            position: relative;
+        }
+        .diamond-icon::before {
+            content: '✦';
+            position: absolute;
+            top: -3px;
+            right: -1px;
+            font-size: 15px;
+            color: var(--color-acento);
+            animation: twinkle 2.5s ease-in-out infinite;
+            text-shadow: 0 0 5px rgba(127, 240, 255, 0.8);
+        }
+        @keyframes borderGlow {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 200% 0%; }
+        }
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        
+        <section class="diamond-border" style="text-align: center; padding: 40px 20px; background-color: #fffaf0; border-radius: 20px; margin-bottom: 20px;">
+            <h1 style="font-family: 'Tangerine', cursive; font-size: 5em; color: var(--color-principal); margin: 0;">
+                Mis Quince Años
+            </h1>
+            <h2 style="font-family: 'Cinzel Decorative', cursive; font-size: 2.5em; color: #333;">
+                Evelin Torres Larios <span class="diamond-icon"></span>
+            </h2>
+            
+            <p id="contador-dias" style="font-family: 'Outfit', sans-serif; font-size: 1.5em; color: var(--color-principal); font-weight: bold; margin-top: 10px;">
+                Cargando conteo...
+            </p>
+
+            <p style="font-family: 'Outfit', sans-serif; font-size: 1.2em; color: #555; margin-top: 15px;">
+                Te esperamos para celebrar este momento especial.
+            </p>
+        </section>
+
+        <section style="text-align: center; padding: 20px; margin-bottom: 20px;">
+            <p style="font-family: 'Prata', serif; font-size: 1.5em; color: var(--color-principal); margin-bottom: 5px;">
+                **12 de Diciembre de 2025**
+            </p>
+            <p style="font-family: 'Alegreya', serif; font-size: 1.1em; color: #666; margin-bottom: 20px;">
+                Con la bendición de mi madre: **Anahy Torres Larios**
+            </p>
+
+            <div style="max-width: 400px; margin: 0 auto; border-top: 1px solid #eee; padding-top: 15px;">
+                <p style="font-family: 'Alegreya', serif; font-weight: 700; color: #333; margin-bottom: 5px;">
+                    Padrinos:
+                </p>
+                <p style="font-family: 'Alegreya', serif; color: #777; line-height: 1.4;">
+                    Gabriela González G. <br>
+                    Luis Campos L.
+                </p>
+            </div>
+        </section>
+
+        <section class="diamond-border" style="padding: 30px; background-color: #f7f7f7; border-radius: 20px; margin-bottom: 20px;">
+            <h3 style="font-family: 'Alfa Slab One', cursive; color: var(--color-principal); text-align: center; margin-bottom: 25px; border-bottom: 2px solid var(--color-principal)40; padding-bottom: 10px;">
+                📍 Ceremonia y Celebración
+            </h3>
+
+            <div style="margin-bottom: 25px; text-align: center;">
+                <h4 style="font-family: 'Nunito', sans-serif; font-weight: 700; color: #333; margin-bottom: 5px;">
+                    Misa - 5:00 hrs
+                </h4>
+                <p style="font-family: 'Roboto', sans-serif; font-weight: 500; color: var(--color-principal); margin-bottom: 5px;">
+                    Rectoría de Santa Teresa de Ávila
+                </p>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 0.9em; color: #777;">
+                    Arcos Ote.285, Jardines del sur Xochimilco, 16050 CDMX
+                </p>
+                <a href="https://maps.app.goo.gl/EJ5wXfCg8p8Fm8f3A" target="_blank" style="display: inline-block; margin-top: 10px; padding: 5px 15px; background-color: var(--color-principal); color: white; text-decoration: none; border-radius: 5px; font-size: 0.9em;">
+                    Ver Misa en Mapa
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <h4 style="font-family: 'Nunito', sans-serif; font-weight: 700; color: #333; margin-bottom: 5px;">
+                    Salón Venecia - Recepción 6:30 hrs
+                </h4>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 0.9em; color: #777;">
+                    Av 20 de Noviembre 515, La Noria, Xochimilco, 16030 CDMX
+                </p>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 0.8em; color: #999; margin-top: 5px;">
+                    (Itinerario detallado se comunicará en el evento)
+                </p>
+                <a href="https://maps.app.goo.gl/9yG9bL2e8uWq7fT8A" target="_blank" style="display: inline-block; margin-top: 10px; padding: 5px 15px; background-color: var(--color-principal); color: white; text-decoration: none; border-radius: 5px; font-size: 0.9em;">
+                    Ver Salón en Mapa
+                </a>
+            </div>
+        </section>
+
+        <section style="padding: 20px; background-color: #fffaf0; border-radius: 20px; text-align: center;">
+            <h3 style="font-family: 'Courgette', cursive; color: var(--color-principal); margin-bottom: 15px;">
+                Detalles Importantes
+            </h3>
+            
+            <p style="font-family: 'Alegreya', serif; color: #333; margin-bottom: 10px;">
+                🎶 **Nuestra Canción:** *Say Yes To Heaven* de Lana Del Rey
+            </p>
+            <p style="font-family: 'Alegreya', serif; color: #333; margin-bottom: 10px;">
+                👗 **Código de Vestimenta:** Formal. El color **rosa** está reservado para la quinceañera.
+            </p>
+            <p style="font-family: 'Alegreya', serif; color: #333; margin-bottom: 10px;">
+                🪑 **Número de Mesa:** **13** (Recuerda personalizar este número por invitado si imprimes invitaciones individuales).
+            </p>
+
+            <div style="border: 2px dashed #ccc; padding: 20px; margin-top: 20px; max-width: 250px; margin-left: auto; margin-right: auto;">
+                <p style="font-family: 'Roboto', sans-serif; font-weight: 700; color: #666; margin-bottom: 10px;">
+                    ¡Tu Tarjeta de Invitado!
+                </p>
+                <div style="width: 100px; height: 100px; background-color: var(--color-principal)20; margin: 0 auto; display: flex; align-items: center; justify-content: center; font-size: 0.8em; color: var(--color-principal);">
+                    [Aquí debes insertar la imagen del Código QR]
+                </div>
+                <p style="font-family: 'Roboto', sans-serif; font-size: 0.8em; color: #999; margin-top: 10px;">
+                    Presenta este QR al llegar.
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="./countdown.js"></script>
+</body>
+</html>
